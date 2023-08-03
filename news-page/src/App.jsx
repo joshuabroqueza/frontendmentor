@@ -27,7 +27,7 @@ function App() {
   };
 
   return (
-    <main className="md:px-16 md:py-14">
+    <main className="md:px-16 md:py-14 lg:px-36 xl:px-52">
       <header className="flex flex-row justify-between items-center p-4">
         <div>
           <img src={news_icons} alt="news_icons" />
@@ -48,19 +48,19 @@ function App() {
                 </button>
                 <div className="list_container">
                   <ul className="py-36 px-5">
-                    <li className="py-2 mx-2 cursor-pointer hover:drop-shadow-md hover:shadow-md px-3">
+                    <li className="py-2 mx-2 cursor-pointer hover:text-light-vermillion hover:cursor-pointer hover:drop-shadow-md hover:shadow-md px-3">
                       Home
                     </li>
-                    <li className="py-2 mx-2 cursor-pointer hover:drop-shadow-md hover:shadow-md px-3">
+                    <li className="py-2 mx-2 cursor-pointer hover:text-light-vermillion hover:cursor-pointer hover:drop-shadow-md hover:shadow-md px-3">
                       New
                     </li>
-                    <li className="py-2 mx-2 cursor-pointer hover:drop-shadow-md hover:shadow-md px-3">
+                    <li className="py-2 mx-2 cursor-pointer hover:text-light-vermillion hover:cursor-pointer hover:drop-shadow-md hover:shadow-md px-3">
                       Popular
                     </li>
-                    <li className="py-2 mx-2 cursor-pointer hover:drop-shadow-md hover:shadow-md px-3">
+                    <li className="py-2 mx-2 cursor-pointer hover:text-light-vermillion hover:cursor-pointer hover:drop-shadow-md hover:shadow-md px-3">
                       Trending
                     </li>
-                    <li className="py-2 mx-2 cursor-pointer hover:drop-shadow-md hover:shadow-md px-3">
+                    <li className="py-2 mx-2 cursor-pointer hover:text-light-vermillion hover:cursor-pointer hover:drop-shadow-md hover:shadow-md px-3">
                       Categories
                     </li>
                   </ul>
@@ -71,27 +71,27 @@ function App() {
 
           <div className="list_container hidden md:flex">
             <ul className="flex flex-row">
-              <li className="py-2 mx-2 cursor-pointer hover:drop-shadow-md hover:shadow-md px-3">
+              <li className="py-2 mx-2 cursor-pointer hover:text-light-vermillion hover:cursor-pointer  px-3">
                 Home
               </li>
-              <li className="py-2 mx-2 cursor-pointer hover:drop-shadow-md hover:shadow-md px-3">
+              <li className="py-2 mx-2 cursor-pointer hover:text-light-vermillion hover:cursor-pointer px-3">
                 New
               </li>
-              <li className="py-2 mx-2 cursor-pointer hover:drop-shadow-md hover:shadow-md px-3">
+              <li className="py-2 mx-2 cursor-pointer hover:text-light-vermillion hover:cursor-pointer px-3">
                 Popular
               </li>
-              <li className="py-2 mx-2 cursor-pointer hover:drop-shadow-md hover:shadow-md px-3">
+              <li className="py-2 mx-2 cursor-pointer hover:text-light-vermillion hover:cursor-pointer px-3">
                 Trending
               </li>
-              <li className="py-2 mx-2 cursor-pointer hover:drop-shadow-md hover:shadow-md px-3">
+              <li className="py-2 mx-2 cursor-pointer hover:text-light-vermillion hover:cursor-pointer px-3">
                 Categories
               </li>
             </ul>
           </div>
         </div>
       </header>
-      <section className="px-4 md:grid md:grid-cols-2 md:space-x-4">
-        <div className="mb-10">
+      <section className="px-4 md:grid lg:grid-cols-3 md:grid-cols-2 md:space-x-4">
+        <div className="mb-10 lg:col-span-2">
           <div>
             <img className="md:hidden" src={hero_img} alt="hero_img" />
             <img
@@ -101,7 +101,7 @@ function App() {
             />
           </div>
           <div className="md:grid md:grid-cols-2 md:space-x-4">
-            <h1 className="font-bold text-3xl md:text-5xl my-5 md:mr-10 border">
+            <h1 className="font-bold text-3xl md:text-5xl my-5 md:mr-10">
               The Bright Future of Web 3.0?
             </h1>
             <div className="">
@@ -110,7 +110,7 @@ function App() {
                 the power of the platforms back into the hands of the people.
                 But is it really fulfilling its promise?
               </p>
-              <button className="px-7 py-3 text-white bg-light-vermillion/90 tracking-widest my-5">
+              <button className="px-7 py-3 text-white bg-light-vermillion/90 tracking-widest my-5 hover:bg-dark-space-blue">
                 READ MORE
               </button>
             </div>
@@ -149,7 +149,7 @@ function App() {
         </div>
       </section>
 
-      <section className="px-4 py-10 md:flex md:flex-row">
+      <section className="px-4 py-10 md:flex md:flex-row md:justify-between">
         <div className="flex flex-row my-5 md:max-h-[129px]">
           <div>
             <img className="max-w-[100px]" src={itemOne} alt="itemOne" />
@@ -157,7 +157,7 @@ function App() {
           <div className="px-5 flex flex-col justify-between">
             <h1 className="text-4xl font-bold text-slate-400">01</h1>
             <h3 className="font-bold my-1 text-lg">Reviving Retro PCs</h3>
-            <p className="text-slate-700 text-sm">
+            <p className="text-slate-700">
               What happens when old PCs are given modern upgrades?
             </p>
           </div>
@@ -178,7 +178,6 @@ function App() {
             </p>
           </div>
         </div>
-
         <div className="flex flex-row my-5 md:max-h-[129px]">
           <div>
             <img
